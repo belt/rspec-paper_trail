@@ -1,4 +1,5 @@
 require 'rspec'
+require 'rspec/expectations'
 
 module RspecExtensions
   # :call-seq:

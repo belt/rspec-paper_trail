@@ -1,3 +1,5 @@
+require 'rspec'
+
 module RspecExtensions
   # :call-seq:
   # with_versioning

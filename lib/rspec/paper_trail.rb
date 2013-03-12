@@ -1,7 +1,3 @@
 require 'rspec/paper_trail/version'
+require 'rspec/versioning_extensions'
 
-module Rspec
-  module PaperTrail
-    # Your code goes here...
-  end
-end

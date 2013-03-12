@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   if spec.respond_to? :specification_version
     spec.specification_version = 3
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0')
-      spec.add_runtime_dependency 'paper_trail', ['~> 2.6.4']
+      spec.add_runtime_dependency 'paper_trail', ['~> 2.7.1']
 
       spec.add_development_dependency 'bundler', ['~> 1.3.0']
       spec.add_development_dependency 'rake'

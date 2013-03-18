@@ -1,7 +1,7 @@
 require 'rspec'
 require 'rspec/expectations'
 
-module RspecExtensions
+module Rspec::PaperTrailExtensions
   # :call-seq:
   # with_versioning
   #
@@ -19,7 +19,7 @@ module RspecExtensions
 end
 
 RSpec.configure do |config|
-  config.include RspecExtensions
+  config.include Rspec::PaperTrailExtensions
 
   config.before(:each) do
     PaperTrail.enabled = false

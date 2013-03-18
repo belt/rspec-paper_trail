@@ -1,0 +1,14 @@
+class CreateVersions < ActiveRecord::Migration
+  def change
+    create_table :versions, force: true do |t|
+      t.string :item_type, null: false
+      <% if use_string_ids? && (migrated? && !has_integer_column?) %>t.string :item_id, null: false  # item_type.id generally should be GUID<% else %>t.integer :item_id, null: false, limit: 8<% end %>
+      t.string :event, null: false
+      t.string :whodunnit
+      t.text :object
+      t.datetime :created_at
+    end
+    add_index :versions, [:item_type, :item_id]
+  end
+end
+

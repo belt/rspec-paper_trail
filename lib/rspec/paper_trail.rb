@@ -1,3 +1,3 @@
 require 'rspec/paper_trail/version'
-require 'rspec/versioning_extensions'
+require 'rspec/paper_trail/extensions'
 

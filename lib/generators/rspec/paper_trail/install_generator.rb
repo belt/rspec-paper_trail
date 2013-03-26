@@ -24,14 +24,7 @@ module PaperTrail
 
     def generate_configuration_files
       copy_file 'features/versioning.rb', 'config/features/versioning.rb'
-    end
-
-    desc 'Augments spec/spec_helper.rb adding paperclip and rspec-extensions'
-
-    def augment_spec_helper
-      [ 'config.include Rspec::PaperTrailExtensions' ].each do |line|
-        insert_into_file 'spec/spec_helper.rb', "  #{line}\n", after: "RSpec.configure do |config|\n"
-      end
+      copy_file 'spec/support/rspec-paper_trail.rb', 'spec/support/rspec-paper_trail.rb'
     end
   private
     def use_string_ids?

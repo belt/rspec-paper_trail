@@ -17,7 +17,7 @@ module Rspec
       def generate_migration_file
         return if options.send(:'skip-migrations')
         migration_template 'migrations/create_versions.rb.erb', 'db/migrate/create_versions.rb'
-        migration_template 'migrations/stringify_versions_item_id.rb', 'db/migrate/stringify_versions_item_id.rb' if use_string_ids? && (!migrated? || has_integer_column?)
+        migration_template 'migrations/stringify_versions_item_id.rb', 'db/migrate/stringify_versions_item_id.rb' if use_string_ids? && connected? && migrated? && !has_integer_column?
       end
 
       desc 'Generates initialization files.'

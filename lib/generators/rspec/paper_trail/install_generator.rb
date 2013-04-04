@@ -24,7 +24,6 @@ module Rspec
 
       def generate_configuration_files
         copy_file 'features/versioning.rb', 'config/features/versioning.rb'
-        copy_file 'spec/support/rspec-paper_trail.rb', 'spec/support/rspec-paper_trail.rb'
       end
 
       private

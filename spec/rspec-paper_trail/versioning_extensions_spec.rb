@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe RspecExtensions do
+describe RSpec::PaperTrailExtensions do
   context 'default' do
     it 'should have versioning off by default' do
       PaperTrail.enabled?.should_not be_true

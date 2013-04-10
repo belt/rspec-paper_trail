@@ -1,7 +1,7 @@
 require 'rspec/core'
 require 'rspec/expectations'
 
-module Rspec
+module RSpec
   module PaperTrailExtensions
     # :call-seq:
     # with_versioning

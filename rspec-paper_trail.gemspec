@@ -31,6 +31,8 @@ Gem::Specification.new do |spec|
       spec.add_development_dependency 'bundler', ['~> 1.3.0']
       spec.add_development_dependency 'rake'
       spec.add_development_dependency 'sqlite3'
+      spec.add_development_dependency 'rspec-rails', '~> 2.13.0'
+      spec.add_development_dependency 'Platform', '>= 0.4.0'
     else
       spec.add_dependency 'paper_trail', ['~> 2.7.1']
       spec.add_dependency 'rspec', ['~> 2.13.0']
@@ -38,6 +40,8 @@ Gem::Specification.new do |spec|
       spec.add_dependency 'bundler', ['~> 1.3']
       spec.add_dependency 'rake'
       spec.add_dependency 'sqlite3'
+      spec.add_dependency 'rspec-rails', '~> 2.13.0'
+      spec.add_dependency 'Platform', '>= 0.4.0'
     end
   else
     spec.add_dependency 'paper_trail', ['~> 2.7.1']
@@ -46,6 +50,8 @@ Gem::Specification.new do |spec|
     spec.add_dependency 'bundler', ['~> 1.3']
     spec.add_dependency 'rake'
     spec.add_dependency 'sqlite3'
+    spec.add_dependency 'rspec-rails', '~> 2.13.0'
+    spec.add_dependency 'Platform', '>= 0.4.0'
   end
 
 end

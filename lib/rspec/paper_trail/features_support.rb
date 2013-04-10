@@ -15,5 +15,5 @@ if defined? World
       end
     end
   end
-  World(RspecPaperTrailCucumberSupport
+  World(RspecPaperTrailCucumberSupport)
 end

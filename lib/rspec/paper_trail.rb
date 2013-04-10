@@ -1,4 +1,3 @@
-require 'paperclip/matchers'
 require 'rspec/paper_trail/version'
 require 'rspec/paper_trail/extensions'
 
@@ -7,7 +6,6 @@ module RSpec
     class Railtie < ::Rails::Railtie
       initializer 'paper_trail.rspec' do
         RSpec.configure do |config|
-          config.include Paperclip::Shoulda::Matchers
           config.include Rspec::PaperTrailExtensions
 
           config.before(:each) do
